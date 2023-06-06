@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#welcome-section > h1 {
+    margin-top: 0px;
+}
+
+#welcome-section {
+    background-color: rgb(65, 65, 65);
+    color:white;
+    height: 100vh;
+}
