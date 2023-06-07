@@ -23,14 +23,12 @@ body {
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; 
 }
-
-#welcome-section > h1 {
+.intro > h1 {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     margin-bottom: 0px;
 }
-
-#welcome-section > h3 {
+.intro > h3 {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-size: 24px;
@@ -47,3 +45,23 @@ body {
     align-items: center; /*align horizontal*/
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*align vertical*/
+    align-items: center; /*align horizontal*/
+    background-color:cornflowerblue;
+}
+
+#projects > h1 {
+    font-size: 36px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
