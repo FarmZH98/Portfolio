@@ -3,6 +3,24 @@ body {
     padding: 0px;
 }
 
+h1 {
+    margin: 0px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    margin: 0px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #navbar {
     position: fixed;
     top: 0px;
@@ -17,21 +35,14 @@ body {
 }
 
 #navbar > a {
-    text-decoration: none;
-    color: white;
     margin: 0 25px;
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; 
 }
-.intro > h1 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+#welcome-section > h1 {
     margin-bottom: 0px;
 }
-.intro > h3 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    font-size: 24px;
+#welcome-section > h3 {
     color: rgb(90, 90, 133);
 }
 
@@ -48,14 +59,15 @@ body {
 #projects {
     display: flex;
     flex-direction: column;
-    justify-content: center; /*align vertical*/
+    justify-content: start;
     align-items: center; /*align horizontal*/
     background-color:cornflowerblue;
+    height: 100vh;
 }
 
 #projects > h1 {
-    font-size: 36px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
 }
 
 .project-tiles {
@@ -64,4 +76,25 @@ body {
     justify-content: center;
     align-items: center;
     
+}
+
+#contact {
+    background-color: rgb(51, 51, 51);
+    color:white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*align vertical*/
+    align-items: center; /*align horizontal*/
+}
+
+.platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.platforms > div {
+    margin: 20px 5vw;
 }
