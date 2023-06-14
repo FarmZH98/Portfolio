@@ -1,12 +1,14 @@
 body {
     margin: 0px;
     padding: 0px;
+    position: relative;
+    text-align: center;
 }
 
 h1 {
     margin: 0px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h3 {
@@ -68,6 +70,7 @@ a {
 #projects > h1 {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-size: 36px;
+    text-decoration: underline;
 }
 
 .project-tiles {
@@ -98,3 +101,45 @@ a {
 .platforms > div {
     margin: 20px 5vw;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;   
+}
+
+.project-tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*align vertical*/
+    align-items: center; /*align horizontal*/
+    height: 100%;
+}
+
+.project-tile {
+    width: 33.33%;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*align vertical*/
+    align-items: center; /*align horizontal*/
+    border:1px solid brown;
+}
+
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* cater to smaller screen */
+@media only screen and (max-width: 720px) {
+    .platforms {
+        flex-direction: column;
+    }
+
+    .project-tiles {
+        flex-direction: column;
+    }
+  }
