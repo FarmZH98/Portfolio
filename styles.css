@@ -134,9 +134,10 @@ img {
     border: 5px solid black;
 }
 
-.project-tile > p {
+.project-tile > a > p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
+    color:darkblue;
 }
 
 /* cater to smaller screen */
