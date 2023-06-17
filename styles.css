@@ -113,6 +113,7 @@ footer {
     justify-content: center; /*align vertical*/
     align-items: center; /*align horizontal*/
     height: 100%;
+    width: 100%;
 }
 
 .project-tile {
@@ -123,15 +124,20 @@ footer {
     flex-direction: column;
     justify-content: center; /*align vertical*/
     align-items: center; /*align horizontal*/
-    border:1px solid brown;
 }
 
 
 img {
-    width: 200px;
+    width: 400px;
+    max-width: 80%;
     height: auto;
+    border: 5px solid black;
 }
 
+.project-tile > p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
 
 /* cater to smaller screen */
 @media only screen and (max-width: 720px) {
@@ -141,5 +147,14 @@ img {
 
     .project-tiles {
         flex-direction: column;
+    }
+
+    .project-tile {
+        width: 80%;
+    }
+
+    img {
+        width: 300px;
+        max-width: 80%;
     }
   }
